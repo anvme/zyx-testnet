@@ -1,5 +1,5 @@
 # zyx-testnet
-ZYX Testnet installation script
+ZYX Testnet installation script for Ubuntu
 
 ## Installation in 2 simple steps (1 minute, and your ZYX Test node is ready)
 
