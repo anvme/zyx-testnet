@@ -14,10 +14,19 @@ cd $HOME && wget https://raw.githubusercontent.com/anvme/zyx-testnet/main/zyx-te
 Our node is ready
 
 
+
+
 ## Helpfull commands
-To check the logs, run command below
+To check the logs, run command below (Ubuntu 20)
 ```sh
 less $HOME/zyx-test.log
+```
+Ubuntu 18
+```sh
+# Logs froom the start
+journalctl -u zyx-test
+# Latest logs
+journalctl -u zyx-test -e
 ```
 To check the ZYX state
 ```sh
