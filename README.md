@@ -12,4 +12,11 @@ cd $HOME && wget https://raw.githubusercontent.com/anvme/zyx-testnet/main/zyx-te
 /bin/bash ./zyx-test-install.sh
 ```
 Our node is ready
-Log in $HOME/zyx-test.log
+To check the logs, run command below
+```sh
+less $HOME/zyx-test.log
+```
+To check the ZYX state
+```sh
+systemctl status zyx-test
+```
