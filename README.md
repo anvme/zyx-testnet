@@ -1,16 +1,13 @@
 # zyx-testnet
 ZYX Testnet installation script for Ubuntu
 
-## Installation in 2 simple steps (1 minute, and your ZYX Test node is ready)
+## Installation in 1 simple step (1 minute, and your ZYX Test node is ready)
 
- 1. Run the command below. Paste it into the terminal window.
+ 1. Run the command below. Paste it into the terminal window on your server
 ```sh
-cd $HOME && wget https://raw.githubusercontent.com/anvme/zyx-testnet/main/zyx-test-install.sh && chmod +x ./zyx-test-install.sh
+wget -O - https://raw.githubusercontent.com/anvme/zyx-testnet/main/zyx-test-install.sh | bash
 ```
- 2. Start the installation. Run the command below. Paste it into the terminal window.
- ```sh
-/bin/bash ./zyx-test-install.sh
-```
+ 
 Our node is ready
 
 
