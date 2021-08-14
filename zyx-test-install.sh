@@ -1,5 +1,4 @@
 #!/bin/bash
-clear >$(tty)
 iUser="$(whoami)"
 iGroup="$(id -gn)"
 iHome="$HOME"
@@ -17,8 +16,7 @@ EOF
 . ~/.profile
 # Install ZYX
 cd $HOME && git clone -v https://github.com/ZYXnetwork/ZYX-20.git zyx && cd ./zyx
-clear >$(tty)
-echo -e '================================================\nStarting build. Wait 5-15 min\n================================================' && sleep 5
+echo -e '================================================\nStarting build. Wait ~5 min\n================================================' && sleep 5
 make
 # /etc/systemd/system/zyx.service
 sudo bash -c 'cat > /etc/systemd/system/zyx-test.service' << EOF
@@ -40,7 +38,6 @@ WantedBy=multi-user.target
 EOF
 # /etc/systemd/system/zyx.service
 sudo systemctl daemon-reload
-sudo systemctl enable zyx-test
-sudo systemctl start zyx-test
+sudo systemctl systemctl enable --now zyx-test
 echo -e '================================================\n ZYX Test Installed \n================================================' && sleep 1
 echo -e 'Enter command below, to check the status:\nsystemctl status zyx-test\nTo run the go, just type . ~/.profile or restart the terminal'
