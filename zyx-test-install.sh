@@ -34,7 +34,7 @@ User=$iUser
 Group=$iGroup
 ExecStart=$iHome/zyx/build/bin/geth --minerva
 ExecStop=/bin/kill -s QUIT $MAINPID
-StandardOutput=file:$iHome/zyx-test.log
+StandardOutput=append:$iHome/zyx-test.log
 [Install]
 WantedBy=multi-user.target
 EOF
