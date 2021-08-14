@@ -9,7 +9,7 @@ cd $HOME && wget https://raw.githubusercontent.com/anvme/zyx-testnet/main/zyx-te
 ```
  2. Run 
  ```sh
-$ /bin/bash ./zyx-test-install.sh
+/bin/bash ./zyx-test-install.sh
 ```
 Our node is ready
 Log in $HOME/zyx-test.log
