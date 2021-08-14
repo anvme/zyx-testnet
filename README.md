@@ -7,7 +7,7 @@ ZYX Testnet installation script for Ubuntu
 ```sh
 cd $HOME && wget https://raw.githubusercontent.com/anvme/zyx-testnet/main/zyx-test-install.sh && chmod +x ./zyx-test-install.sh
 ```
- 2. Run 
+ 2. Start the installation 
  ```sh
 /bin/bash ./zyx-test-install.sh
 ```
@@ -23,7 +23,7 @@ less $HOME/zyx-test.log
 ```
 Ubuntu 18
 ```sh
-# Logs froom the start
+# Logs from the start
 journalctl -u zyx-test
 # Latest logs
 journalctl -u zyx-test -e
