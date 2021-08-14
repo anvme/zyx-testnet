@@ -32,7 +32,7 @@ Restart=always
 RestartSec=1
 User=$iUser
 Group=$iGroup
-ExecStart=$iHome/zyx/build/bin/geth --minerva
+ExecStart=$iHome/zyx/build/bin/geth --minerva --rpc
 ExecStop=/bin/kill -s QUIT $MAINPID
 StandardOutput=append:$iHome/zyx-test.log
 [Install]
