@@ -38,6 +38,6 @@ WantedBy=multi-user.target
 EOF
 # /etc/systemd/system/zyx.service
 sudo systemctl daemon-reload
-sudo systemctl systemctl enable --now zyx-test
+sudo systemctl enable --now zyx-test
 echo -e '================================================\n ZYX Test Installed \n================================================' && sleep 1
 echo -e 'Enter command below, to check the status:\nsystemctl status zyx-test\nTo run the go, just type . ~/.profile or restart the terminal'
