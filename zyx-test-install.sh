@@ -10,11 +10,11 @@ sudo apt-get install git build-essential -y
 sudo rm -rf /usr/local/go
 GOLatestVer="https://golang.org/dl/$(curl -s https://golang.org/VERSION?m=text).linux-amd64.tar.gz" #go1.16.7
 wget $GOLatestVer -O - | sudo tar -C /usr/local -xz
-bash -c 'cat >> /$HOME/.profile' << EOF
-# set PATH for Go
-export PATH=\$PATH:/usr/local/go/bin
+bash -c 'cat >> ~/.profile' << EOF
+# set PATH for Go & Geth
+export PATH=\$PATH:/usr/local/go/bin:$iHome/zyx/build/bin
 EOF
-source /$HOME/.profile
+. ~/.profile
 # Install ZYX
 cd $HOME && git clone -v https://github.com/ZYXnetwork/ZYX-20.git zyx && cd ./zyx
 clear >$(tty)
@@ -43,4 +43,4 @@ sudo systemctl daemon-reload
 sudo systemctl enable zyx-test
 sudo systemctl start zyx-test
 echo -e '================================================\n ZYX Test Installed \n================================================' && sleep 1
-echo -e 'Enter command below, to check the status:\nsystemctl status zyx-test\nTo run the go, just type export PATH=$PATH:/usr/local/go/bin or restart the terminal'
+echo -e 'Enter command below, to check the status:\nsystemctl status zyx-test\nTo run the go, just type . ~/.profile or restart the terminal'
