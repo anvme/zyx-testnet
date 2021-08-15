@@ -1,0 +1,15 @@
+[Unit]
+Description=ZYX Minerva Testnet
+After=network.target syslog.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=$iUser
+Group=$iGroup
+ExecStart=$iHome/zyx/build/bin/geth --minerva --rpc
+ExecStop=/bin/kill -s QUIT $MAINPID
+StandardOutput=append:$iHome/zyx-test.log
+[Install]
+WantedBy=multi-user.target
