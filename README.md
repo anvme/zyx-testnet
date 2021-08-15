@@ -1,6 +1,7 @@
 # zyx-testnet
 ZYX Testnet installation script for Ubuntu
-The server used for the node is hosted on [DO](https://m.do.co/c/625bd830abaa)
+
+The server used for my node is placed in [DO](https://m.do.co/c/625bd830abaa)
 ## Installation in 1 simple step (1 minute and your ZYX Test node is ready)
 
 1. Run the command below. Paste it into the terminal window on your server
