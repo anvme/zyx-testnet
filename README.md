@@ -9,6 +9,8 @@ wget -O - https://raw.githubusercontent.com/anvme/zyx-testnet/main/zyx-test-inst
 ```
  
 Our node is ready
+## Video for fun (Click on the gif)
+[![Vimeo | ZYX Testnet Minerva Installation](https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/5833dc4f-8ade-4d0e-8224-8015df4fca09.gif?ClientID=vimeo-core-prod&Date=1628987308&Signature=cbf1699a3581ea10a71d8c2002bc6b682d05ff44)](https://vimeo.com/587303965)
 
 
 
