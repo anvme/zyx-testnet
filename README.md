@@ -31,3 +31,9 @@ To check the ZYX state
 ```sh
 systemctl status zyx-test
 ```
+
+## Logrotation install
+ 1. Run the command below. Paste it into the terminal window on your server. The script will ask only how many daily logs you want to serve. Put the number. from 7 to 90
+```sh
+wget -O - https://raw.githubusercontent.com/anvme/zyx-testnet/main/zyx-test-logrotate.sh | bash <(cat) </dev/tty
+```
