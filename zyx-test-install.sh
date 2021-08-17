@@ -16,7 +16,7 @@ EOF
 . ~/.profile
 # Install ZYX
 cd $HOME && git clone -v https://github.com/ZYXnetwork/ZYX-20.git zyx
-cd ./zyx
+cd $HOME/zyx
 echo -e '================================================\nStarting build. Wait ~5 min\n================================================' && sleep 5
 make
 # /etc/systemd/system/zyx.service
