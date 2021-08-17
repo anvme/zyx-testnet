@@ -3,8 +3,8 @@ iUser="$(whoami)"
 iGroup="$(id -gn)"
 iHome="$HOME"
 # Install 
-sudo apt update
-sudo apt-get install git build-essential -y
+sudo apt -qq update
+sudo apt-get install git build-essential curl wget -y
 # Install latest Go version
 sudo rm -rf /usr/local/go
 GOLatestVer="https://golang.org/dl/$(curl -s https://golang.org/VERSION?m=text).linux-amd64.tar.gz" #go1.16.7
